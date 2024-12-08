@@ -1,0 +1,48 @@
+|SIPO_SR
+Data_in => d_ff:IC0.D
+clk => d_ff:IC0.clk
+clk => d_ff:IC1.clk
+clk => d_ff:IC2.clk
+clk => d_ff:IC3.clk
+reset => d_ff:IC0.reset
+reset => d_ff:IC1.reset
+reset => d_ff:IC2.reset
+reset => d_ff:IC3.reset
+Q[0] <= d_ff:IC0.Q
+Q[1] <= d_ff:IC1.Q
+Q[2] <= d_ff:IC2.Q
+Q[3] <= d_ff:IC3.Q
+Qn[0] <= d_ff:IC0.Q
+Qn[1] <= d_ff:IC1.Q
+Qn[2] <= d_ff:IC2.Q
+Qn[3] <= d_ff:IC3.Q
+
+
+|SIPO_SR|D_FF:IC0
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+reset => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SIPO_SR|D_FF:IC1
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+reset => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SIPO_SR|D_FF:IC2
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+reset => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SIPO_SR|D_FF:IC3
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+reset => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
